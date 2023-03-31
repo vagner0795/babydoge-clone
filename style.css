@@ -8,6 +8,21 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Kanit", sans-serif;
+
+}
+
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(106, 165, 191);
+  border-radius: 8px;        
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: rgb(7, 13, 16) 0px 0px 5px inset;
+  border-radius: 10px;
 }
 
 /* HEADER AND MENU */
@@ -171,7 +186,6 @@
 
 .coin1 {
   position: absolute;
-  left: 966.24px;
   right: 822.98px;
   bottom: 111.09px;
   left: 966.2px;
@@ -185,7 +199,6 @@
 
 .coin2 {
   position: absolute;
-  left: 1054.53px;
   right: 755.19px;
   bottom: -38.22px;
   left: 966.2px;
@@ -207,7 +220,6 @@
 
 .coin4 {
   position: absolute;
-  height: 80px;
   left: 1800.96px;
   right: -25.24px;
   top: 450.34px;
@@ -230,7 +242,6 @@
 
 .coin6 {
   position: absolute;
-  height: 60px;
   left: 1757.3px;
   right: 56.62px;
   top: 191.16px;
@@ -271,7 +282,7 @@
   color: #ffffff;
   font-weight: 400;
   width: 300px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-top: 20px;
   margin-left: 40%;
@@ -419,260 +430,4 @@
   top: 1500px;
 }
 
-/* MOBILE CONFIG */
-@media (max-width: 415px) {
-  /* HEADER */
-  .logo-mobile {
-    display: block;
-  }
 
-  .logo {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .language {
-    display: none;
-  }
-
-  .wallet {
-    display: none;
-  }
-
-  .config {
-    display: none;
-  }
-
-  /* MAIN CONTENT */
-
-  .content {
-    border-radius: 0;
-    margin-top: 0;
-    width: 100%;
-    background-position: left;
-    padding: 10px;
-    height: 600px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-  }
-
-  .title {
-    font-size: 45px;
-    width: 450px;
-    padding: 40px 50px 0 50px;
-    text-align: center;
-    line-height: 60px;
-    z-index: 2;
-  }
-
-  .text-main {
-    font-size: 12px;
-    color: #ffffff;
-    width: 490px;
-    line-height: 20px;
-    font-style: italic;
-    text-align: center;
-    padding: 40px;
-    padding-top: 15px;
-    z-index: 2;
-  }
-
-  .button-box {
-    padding-left: 0px;
-    gap: 30px;
-  }
-
-  .button-blue {
-    width: 200px;
-    height: 48px;
-    font-size: 17px;
-    z-index: 2;
-  }
-
-  .button-yellow {
-    width: 200px;
-    height: 48px;
-    font-size: 17px;
-  }
-
-  .doge {
-    position: sticky;
-    top: 500px;
-    left: 60px;
-    width: 220px;
-    height: 300px;
-    transform: rotate(12deg);
-  }
-
-  .coin1 {
-    position: absolute;
-
-    width: 50;
-    top: 400px;
-    left: -25px;
-    z-index: 1;
-    transform: rotate(-85deg);
-  }
-
-  .coin2 {
-    position: absolute;
-    top: 180px;
-    left: 10px;
-
-    height: 80px;
-    width: 80px;
-  }
-
-  .coin3 {
-    position: absolute;
-    left: 280px;
-    top: 500px;
-
-    height: 60px;
-    width: 60px;
-    transform: rotate(-10deg);
-  }
-
-  .coin4 {
-    position: absolute;
-    left: 310px;
-    top: 380px;
-    height: 50px;
-    width: 50px;
-  }
-
-  .coin5 {
-    position: absolute;
-    left: -40px;
-    top: 290px;
-    height: 60px;
-    width: 70px;
-  }
-
-  .coin6 {
-    position: absolute;
-    left: 50px;
-    top: 310px;
-    height: 70px;
-    width: 70px;
-    transform: rotate(120deg);
-  }
-
-  .smart-chain {
-    background-image: none;
-    background-color: #081720;
-    height: 1300px;
-  }
-
-  .title-2 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: -160px;
-  }
-
-  .subtitle {
-    color: #ffffff;
-    font-weight: 400;
-    width: 300px;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 10%;
-  }
-
-  .box-top {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .box-bottom {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .box-child {
-    background-color: #06334b;
-    width: 320px;
-    height: 90px;
-    margin-left: 0px;
-  }
-
-  .text-box-child {
-    text-align: start;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .text-box-2 {
-    color: #ffffff;
-    font-style: italic;
-    text-align: end;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 0px;
-  }
-
-  .get {
-    color: #ffffff;
-    text-align: center;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 20px;
-  }
-
-  /* FINAL SITE */
-
-  .final-box {
-    display: flex;
-    background-image: linear-gradient(to right, #091822, #0b1c28);
-    justify-content: center;
-    flex-direction: column;
-    gap: 100px;
-    padding-bottom: 10px;
-  }
-
-  .final-title {
-    font-size: 44px;
-    line-height: 40px;
-    width:300px;
-    text-align: center;
-    margin: 20px auto;
-    margin-bottom: 50px;
-
-  }
-  .final-text {
-    font-size: 14px;
-    line-height: 18px;
-    width: 315px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .box-button-final{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -100px;
-  }
-
- .final-button-transparent{
-    margin-left: 0;
-    margin-top: 20px;
- }
-
- .last-image{
-    display: none;
- }
-
- .last-image-coin{
-    display: none;
- }
-
-}
