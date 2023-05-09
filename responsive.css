@@ -160,6 +160,11 @@
 }
 
 @media (max-width: 900px) {
+  /* HEADER CONFIG */
+
+  .menu{
+    display: none;
+  }
   /* CONTAINER MAIN CONFIG */
 
 
@@ -330,7 +335,7 @@
   .title-2 {
     color: #ffffff;
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 44px;
     margin-top: 0;
   }
@@ -339,7 +344,7 @@
     color: #ffffff;
     font-weight: 400;
     width: 300px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin-top: 20px;
     margin-left: 30%;
@@ -421,7 +426,8 @@
   .final-text {
     font-size: 22px;
     line-height: 30px;
-    width: 95%;
+    width: 85%;
+    text-align: center;
   }
 
   .text-box-final {

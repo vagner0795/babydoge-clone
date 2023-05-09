@@ -29,12 +29,13 @@ body::-webkit-scrollbar-track {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #06334b;
   padding: 5px 10px;
   width: 100%;
 }
+
 
 .logo-mobile {
   display: none;
